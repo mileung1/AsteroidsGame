@@ -1,10 +1,13 @@
 Spaceship bob = new Spaceship();
 Stars[] nightSky = new Stars[100];
 ArrayList <Asteroids> rocks = new ArrayList <Asteroids>();
+public void settings() {
+  size(500, 500);
+}
 public void setup() 
 {
   background(0);
-  size(500,500);
+  
   //creates stars 
   for(int i = 0;i < nightSky.length; i++){
     nightSky[i] = new Stars();
